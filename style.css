@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-image: radial-gradient(#0000007e, #000000d3), url(https://source.unsplash.com/1600x900/?notebook);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    background-attachment: fixed;
+}
+.btn-purple{
+    background: #b36dff;
+    color: #fff;
+}
+.btn-purple:hover{
+    background: #9040e6;
+    color: #fff;
+}
+.full-form{
+    max-width: 430px;
+    width: 100%;
+    border-radius: 10px;
+}
+.single-work{
+    text-decoration: none;
+    list-style: none;
+    background: #EFEFF9;
+    position: relative;
+}
+.single-work:hover .fa-trash{
+    right: 0px;
+}
+.work-container{
+    max-height: 264px;
+    overflow-x: hidden;
+}
+.fa-trash{
+    position: absolute;
+    background: #fd4f4fdd;
+    padding: 18px 20px;
+    font-size: 20px;
+    right: -58px;
+    top: 0;
+    color: #fff;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+.fa-trash:hover{
+    background: #ff0202dd;
+}
+@media only screen and (max-width: 688px) {
+    .fa-trash{
+        right: 0px;
+    }
+    .full-form{
+        max-width: 300px;
+    }
+    .work-container {
+        max-height: 199px;
+    }
+}

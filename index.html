@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ToDo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf2572e12f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://freeiconshop.com/wp-content/uploads/edd/clipboard-list-flat.png"
+        type="image/x-icon">
+</head>
+
+<body class="d-flex align-items-center">
+    <section class="full-form mx-auto bg-light p-3">
+        <form>
+            <h2 class="text-center pb-2">ToDo</h2>
+            <div class="input-group mb-3 mx-auto">
+                <input type="text" class="form-control rounded" placeholder="Add Your New Work"
+                    aria-label="Add Your New Work" aria-describedby="button-add" id="input-field" autocomplete="off"
+                    autofocus>
+                <button class="btn btn-purple rounded ms-2 px-3 py-2" type="submit" id="button-add"
+                    onclick="getDataFromStorage()" disabled><i class="fas fa-plus"></i></button>
+            </div>
+        </form>
+        <div class="p-0 p-md-2">
+            <ul class="p-0 work-container" id="list-container">
+                <!-- Data from storage -->
+            </ul>
+            <footer class="d-flex justify-content-between">
+                <p><span id="pending-number"></span> works pending...</p>
+                <button class="btn btn-purple" id="delete-all" disabled>Clear all</button>
+            </footer>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
